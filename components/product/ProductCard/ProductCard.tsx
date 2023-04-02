@@ -49,9 +49,9 @@ const ProductCard: FC<ProductCardProps> = ({
             </div>
             <Image
               quality="85"
-              // width={imgWidth}
+              width={imgWidth}
               sizes={imgSizes}
-              // height={imgHeight}
+              height={imgHeight}
               layout={imgLayout}
               loading={imgLoading}
               priority={imgPriority}
