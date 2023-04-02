@@ -65,14 +65,14 @@ const Navbar: FC = () => {
       <Container>
         <div className="relative flex flex-row justify-between py-4 align-center md:py-6">
           <div className="flex items-center flex-1">
-            <Link href="/">
+            <Link href="/" legacyBehavior>
               <a className={s.logo} aria-label="Logo">
                 <Logo />
               </a>
             </Link>
             <nav className="hidden ml-6 space-x-4 lg:block">
               {collections.map((cl) => (
-                <Link key={cl.handle} href={`/collection/${cl.handle}`}>
+                <Link legacyBehavior key={cl.handle} href={`/collection/${cl.handle}`}>
                   <a className={s.link}>{cl.title}</a>
                 </Link>
               ))}
